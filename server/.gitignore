@@ -26,8 +26,8 @@ local_settings.py
 *.swp
 
 # Ignore database migrations, as they should be committed with the source code
-**/migrations/*.py
-**/migrations/*.pyc
+# **/migrations/*.py
+# **/migrations/*.pyc
 
 # Ignore secret keys and other sensitive data
 *.secret
