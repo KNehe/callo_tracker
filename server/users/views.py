@@ -30,3 +30,8 @@ def sign_up(request):
     }
 
     return Response(message, status=status.HTTP_201_CREATED)
+
+
+@api_view(['GET'])
+def home(request):
+    return Response("Welcome to Cohort 14 Calorie API")
