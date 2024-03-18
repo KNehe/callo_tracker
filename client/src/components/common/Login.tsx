@@ -6,33 +6,27 @@ import {
 	TextInput,
 	Title,
 } from '@mantine/core';
+import LSLayout from './Login-SignUp-Layout';
 
 const Login = () => {
 	return (
-		<div>
-			<Container>
-				<Title>Login</Title>
-				<Stack>
-					<TextInput
-						leftSectionPointerEvents="none"
-						label="Enter your email"
-						placeholder="Enter your email"
-					/>
-					<PasswordInput
-						label="Password"
-						description="Enter your password"
-						placeholder="Enter your password"
-					/>
-				</Stack>
+		<LSLayout>
+			<Title order={2} ta={'left'}>
+				Login
+			</Title>
+			<Stack gap="1em">
+				<TextInput label="Email" placeholder="Enter your email" />
+				<PasswordInput label="Password" placeholder="Enter your password" />
 				<Button
 					onClick={() => {
 						// make API request to log user in
 					}}
+					variant="filled"
 				>
-					Submit
+					Log In
 				</Button>
-			</Container>
-		</div>
+			</Stack>
+		</LSLayout>
 	);
 };
 
