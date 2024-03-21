@@ -4,4 +4,4 @@ from .models import FoodItem
 class FoodItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = FoodItem
-        fields = "__all__"
+        fields = ("name", "calorie_count", "quantity")
