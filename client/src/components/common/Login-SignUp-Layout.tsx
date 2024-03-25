@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 
 const LSLayout = (props: { children: React.ReactNode }) => {
 	return (
@@ -11,6 +11,7 @@ const LSLayout = (props: { children: React.ReactNode }) => {
 				alignItems: 'center',
 				flexDirection: 'column',
 				margin: 'auto',
+				textAlign: 'left',
 			}}
 		>
 			{props.children}

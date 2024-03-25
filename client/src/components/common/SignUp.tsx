@@ -9,27 +9,33 @@ const SignUp = () => {
 
 	return (
 		<LSLayout>
-			<Title order={2} ta={'left'}>
+			<Title order={2} ta={'left'} mb={'lg'}>
 				Create An Account
 			</Title>
-			<Stack gap="1em">
+			<Stack gap="1em" w={'50%'}>
 				<TextInput
 					label="Full Name"
 					placeholder="Enter your full name"
 					value={userName}
-					onChange={(e) => setUserName(e.target.value)}
+					onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+						setUserName(e.target.value)
+					}
 				/>
 				<TextInput
 					label="Email"
 					placeholder="Enter your email"
 					value={email}
-					onChange={(e) => setEmail(e.target.value)}
+					onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+						setEmail(e.target.value)
+					}
 				/>
 				<PasswordInput
 					label="Password"
 					placeholder="Enter your password"
 					value={password}
-					onChange={(e) => setPassword(e.target.value)}
+					onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+						setPassword(e.target.value)
+					}
 				/>
 				<Button
 					onClick={() => {
