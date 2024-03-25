@@ -1,13 +1,11 @@
-import { Title } from '@mantine/core';
+import { useLocation } from 'react-router-dom';
 import Login from '../common/Login';
 import SignUp from '../common/SignUp';
 
-type LoginAndSignUpProps = {
-	isLoginPage: boolean;
-};
+const LoginAndSignUpPage = () => {
+	const location = useLocation();
+	const isLoginPage = location.pathname === '/login';
 
-const LoginAndSignUpPage = (props: LoginAndSignUpProps) => {
-	const { isLoginPage } = props;
 	return (
 		<div>
 			<div>{isLoginPage ? <Login /> : <SignUp />}</div>

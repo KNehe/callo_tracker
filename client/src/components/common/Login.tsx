@@ -35,7 +35,7 @@ const Login = () => {
 					onClick={() => {
 						// make API request to log user in
 					}}
-					variant="filled"
+					variant="outline"
 				>
 					Log In
 				</Button>
